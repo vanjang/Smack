@@ -13,6 +13,7 @@ import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
+import android.view.View
 import androidx.core.view.GravityCompat
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -59,4 +60,19 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+    fun loginButtonNavClicked(view: View) {
+    println("loginbutton clicked")
+    }
+
+
+    fun addChannelClicked(view: View) {
+        println("addchannel clicked")
+    }
+
+    fun sendMessageButtonClicked(view: View) {
+
+    }
+
+
 }
